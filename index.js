@@ -23,7 +23,7 @@ app.get("/:#",(req,res)=>{
 });
 
 //route for post data
-app.post("/",(req,res)=>{
+app.get("/",(req,res)=>{
   const id = req.params
   console.log(req.body)
 
