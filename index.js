@@ -21,6 +21,14 @@ app.get("/:id",(req,res)=>{
 
 });
 
+//route for post data
+app.get("/",(req,res)=>{
+  const id = req.params.id
+  res.redirect(301, `https://barcodescanview.com/${id}`);
+
+});
+
+
 
 
 
