@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 
 //route for post data
-app.get("/:id",(req,res)=>{
+app.get("/:#",(req,res)=>{
   const id = req.params
   console.log(id)
   res.redirect(301, `https://barcodescanview.com`);
