@@ -28,7 +28,7 @@ app.get("/",(req,res)=>{
   console.log(req.body)
 
   console.log("req.headers")
-  console.log(id)
+  console.log(req)
 
 
   res.redirect(301, `https://barcodescanview.com/`);
