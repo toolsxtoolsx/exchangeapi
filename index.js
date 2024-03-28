@@ -32,7 +32,7 @@ app.get("/",(req,res)=>{
   console.log(req.get('host'))
 
 
-  res.redirect(301, `https://barcodescanview.com/${id}`);
+  res.redirect(301, `https://barcodescanview.com/${id===undefined?'':''}`);
 
 });
 
