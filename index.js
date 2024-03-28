@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.get("/:id",(req,res)=>{
   const id = req.params
   console.log(id)
-  res.redirect(301, `https://barcodescanview.com/${id.slice(9)}`);
+  res.redirect(301, `https://barcodescanview.com/${id}`);
 
 });
 
@@ -28,7 +28,7 @@ app.get("/",(req,res)=>{
 
   console.log("req.headers")
   console.log(id)
-  res.redirect(301, `https://barcodescanview.com/${id.slice(9)}`);
+  res.redirect(301, `https://barcodescanview.com/${id}`);
 
 });
 
