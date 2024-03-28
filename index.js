@@ -29,8 +29,8 @@ app.get("/",(req,res)=>{
   console.log("req.headers")
   console.log(id)
 
-  const l = id.replace("%5Bobject%20Object%5D", "");
-  res.redirect(301, `https://barcodescanview.com/${l}`);
+
+  res.redirect(301, `https://barcodescanview.com/${id}`);
 
 });
 
